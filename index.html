@@ -1,0 +1,477 @@
+[{"id":"INC-2408","product":"PRD-90211","location":"Central Park Gate","severity":"High","confidence":91,"time":"2 min ago"},{"id":"INC-2407","product":"PRD-77310","location":"Market Road","severity":"Medium","confidence":84,"time":"18 min ago"},{"id":"INC-2406","product":"Unknown Plastic","location":"River Front","severity":"Low","confidence":52,"time":"41 min ago"}][{"id":"PRD-58291","name":"Beverage Bottle","category":"Plastic","owner":"Aarav Sharma","status":"In Use","points":120},{"id":"PRD-77310","name":"Food Container","category":"Plastic","owner":"Neha Verma","status":"Disposed","points":80},{"id":"PRD-44920","name":"Cardboard Pack","category":"Paper","owner":"Rohan Singh","status":"Recycled","points":160},{"id":"PRD-90211","name":"Aluminium Can","category":"Metal","owner":"Isha Gupta","status":"Public Violation","points":35}][{"id":"BIN-102","area":"Central Park","fill":96,"status":"Critical","type":"Mixed Waste","lat":28.614,"lon":77.21},{"id":"BIN-087","area":"Market Road","fill":82,"status":"Warning","type":"Plastic","lat":28.617,"lon":77.215},{"id":"BIN-114","area":"Green Avenue","fill":41,"status":"Normal","type":"Dry Waste","lat":28.611,"lon":77.217},{"id":"BIN-063","area":"School Zone","fill":68,"status":"Normal","type":"Paper","lat":28.619,"lon":77.205},{"id":"BIN-131","area":"River Front","fill":91,"status":"Critical","type":"Mixed Waste","lat":28.608,"lon":77.225}]@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:#040b11;color:#eaf7f7}button,input{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:flex;background:radial-gradient(circle at 80% 0%,#0b2029 0,#040b11 36%)}.sidebar{width:242px;position:fixed;inset:0 auto 0 0;border-right:1px solid #17303a;background:rgba(5,14,21,.92);padding:22px 14px;display:flex;flex-direction:column;z-index:10}.brand{display:flex;align-items:center;gap:11px;padding:2px 9px 26px}.brand-icon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:#0b3d35;color:#36f1a1;box-shadow:0 0 28px #36f1a126}.brand strong{display:block;font-size:18px;letter-spacing:-.5px}.brand span{display:block;color:#63808a;font-size:8px;letter-spacing:1.4px;margin-top:2px}nav{display:grid;gap:5px}nav a{display:flex;align-items:center;gap:12px;color:#76919b;text-decoration:none;padding:11px 12px;border-radius:10px;font-size:13px;font-weight:600;transition:.2s}nav a:hover,nav a.active{color:#eafff8;background:#10232a;box-shadow:inset 2px 0 #36f1a1}nav a.active svg{color:#36f1a1}.sidebar-bottom{margin-top:auto;color:#57717b;font-size:10px;padding:14px 8px}.ai-status{color:#8da8ae;display:flex;align-items:center;gap:7px;margin-bottom:7px}.ai-status i,.live i{width:7px;height:7px;border-radius:50%;background:#36f1a1;box-shadow:0 0 10px #36f1a1;display:inline-block}main{margin-left:242px;width:calc(100% - 242px)}.header{height:68px;border-bottom:1px solid #132a33;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:#061018c9;backdrop-filter:blur(16px);position:sticky;top:0;z-index:8}.search{display:flex;gap:10px;align-items:center;color:#55737e}.search input{background:none;border:0;outline:0;color:#dceced;width:310px;font-size:12px}.header-actions{display:flex;align-items:center;gap:20px}.live{font-size:9px;letter-spacing:1.2px;color:#80a1a8;display:flex;align-items:center;gap:7px}.icon-btn{border:1px solid #1c3640;background:#0a1820;color:#abc0c4;width:35px;height:35px;border-radius:9px;position:relative;display:grid;place-items:center}.icon-btn em{position:absolute;right:-3px;top:-4px;background:#ff4d6d;color:white;font-style:normal;font-size:8px;border-radius:10px;padding:2px 5px}.profile{display:flex;gap:9px;align-items:center}.profile b{display:block;font-size:11px}.profile span{display:block;color:#66838c;font-size:9px;margin-top:2px}.avatar{width:31px;height:31px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,#1a4d51,#10292e);border:1px solid #2b6461;color:#b9fff0;font-size:10px;font-weight:800}.content{padding:28px;max-width:1700px;margin:auto}.page-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:22px}.eyebrow{font-size:9px;letter-spacing:1.8px;color:#66838c;font-weight:700;display:flex;align-items:center;gap:8px}.eyebrow span{width:17px;height:1px;background:#36f1a1;display:inline-block}.page-head h1{font-size:27px;letter-spacing:-1px;margin:8px 0 6px}.page-head h1 strong{color:#36f1a1}.page-head p{margin:0;color:#69858e;font-size:12px}.primary{border:0;background:#36f1a1;color:#03100d;border-radius:9px;padding:10px 14px;font-size:11px;font-weight:800;box-shadow:0 8px 24px #36f1a120}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:14px}.stat-card,.panel{border:1px solid #17323b;background:linear-gradient(145deg,#091820e8,#071219e8);border-radius:13px;box-shadow:0 12px 35px #0004}.stat-card{padding:15px 17px}.stat-top{display:flex;justify-content:space-between;color:#68848d;font-size:10px}.stat-top svg{color:#3b8d7d}.stat-value{font-size:27px;font-weight:800;margin:10px 0 8px;letter-spacing:-1px}.stat-bottom{display:flex;align-items:center;gap:8px;color:#5f7982;font-size:9px}.stat-bottom b{color:#36f1a1}.stat-bottom svg{margin-left:auto}.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(350px,.75fr);gap:14px}.panel{padding:16px}.panel-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.panel-title h3{font-size:13px;margin:0 0 4px}.panel-title span{font-size:9px;color:#5e7b85}.ghost{border:0;background:none;color:#6e8a92;font-size:9px;display:flex;align-items:center;gap:3px}.map-panel{padding-bottom:0}.scene{height:420px;border:1px solid #14313a;border-radius:10px;overflow:hidden;background:#050e14;position:relative}.bin-tag{font-size:8px;color:#d7eeee;background:#07131aee;border:1px solid;border-radius:5px;padding:4px 6px;display:flex;gap:5px;white-space:nowrap}.bin-tag b{color:#fff}.map-legend{display:flex;gap:12px}.map-legend span{font-size:8px;color:#66818a;display:flex;align-items:center;gap:4px}.map-legend i{width:6px;height:6px;border-radius:50%;display:inline-block}.green{background:#36f1a1}.orange{background:#ffb020}.red{background:#ff4d6d}.prediction{margin:12px -16px 0;padding:12px 15px;border-top:1px solid #153039;display:flex;align-items:center;gap:10px}.pulse{width:30px;height:30px;border-radius:9px;background:#093b32;color:#36f1a1;display:grid;place-items:center;font-size:8px;font-weight:800}.prediction div:nth-child(2){flex:1}.prediction b{display:block;font-size:10px}.prediction span{display:block;color:#69858e;font-size:9px;margin-top:3px}.prediction strong{color:#ffb020}.prediction button{border:1px solid #24474a;background:#0c2025;color:#9cead8;border-radius:7px;padding:7px 9px;font-size:9px}.side-stack{display:grid;gap:14px}.bin-list{display:grid;gap:3px}.bin-row{display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #10262e}.bin-row:last-child{border:0}.bin-dot{width:7px;height:7px;border-radius:50%;background:#36f1a1;box-shadow:0 0 8px currentColor}.bin-dot.warning{background:#ffb020}.bin-dot.critical{background:#ff4d6d}.bin-info{min-width:110px}.bin-info b{display:block;font-size:9px}.bin-info span{display:flex;gap:3px;align-items:center;color:#55727c;font-size:8px;margin-top:3px}.fill{display:flex;align-items:center;gap:6px;flex:1}.fill-track{height:4px;background:#132a31;border-radius:5px;overflow:hidden;flex:1}.fill-track i{display:block;height:100%;background:#36f1a1;border-radius:5px}.bin-row:nth-child(1) .fill-track i,.bin-row:nth-child(4) .fill-track i{background:#ff4d6d}.bin-row:nth-child(2) .fill-track i{background:#ffb020}.fill b{font-size:9px}.status{font-size:8px;border-radius:5px;padding:4px 6px;background:#11342d;color:#69e6bd}.status.warning,.status.medium{background:#3a2d10;color:#ffc65c}.status.critical,.status.high,.status.public-violation{background:#3d1822;color:#ff8197}.status.disposed{background:#172b36;color:#83c5df}.status.recycled{background:#11342d;color:#69e6bd}.alert-row{display:flex;align-items:center;gap:9px;padding:10px 0;border-bottom:1px solid #10262e}.alert-row:last-child{border:0}.alert-icon{width:28px;height:28px;border-radius:8px;display:grid;place-items:center}.alert-icon.high{background:#3b1821;color:#ff7088}.alert-icon.medium{background:#3b2c11;color:#ffbf43}.alert-icon.low{background:#123044;color:#62c4f3}.alert-text{flex:1}.alert-text b{font-size:9px;display:block}.alert-text span{display:block;color:#5e7a84;font-size:8px;margin-top:3px}.alert-time{color:#506a74;font-size:7px;display:flex;align-items:center;gap:3px}.lower-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.chart-panel{min-height:270px}.table-panel{padding:0;overflow:hidden}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:700px}th{text-align:left;padding:13px 16px;background:#08151d;color:#58737d;font-size:8px;text-transform:uppercase;letter-spacing:1px}td{padding:14px 16px;border-top:1px solid #122a32;color:#b6cacc;font-size:10px}.trace-card{padding:20px;display:flex;align-items:flex-start;justify-content:center;gap:0;min-height:260px}.trace-step{position:relative;width:170px;text-align:center}.trace-node{width:38px;height:38px;margin:15px auto 12px;border-radius:50%;display:grid;place-items:center;background:#0d332f;color:#36f1a1;border:1px solid #267967;font-weight:800}.trace-step b{display:block;font-size:10px}.trace-step span{display:block;color:#5d7982;font-size:8px;margin-top:4px}.trace-line{position:absolute;height:1px;background:#25524e;top:34px;left:103px;width:120px}.trace-id{position:absolute;margin-top:-5px;color:#36f1a1;font-size:12px;font-weight:800}.route-box{display:flex;justify-content:space-between;align-items:center;padding:18px;border:1px solid #1b3a40;background:#091920;border-radius:10px;margin:16px}.route-box span{font-size:8px;letter-spacing:1.5px;color:#63818a}.route-box h2{margin:7px 0 3px;font-size:20px}.route-box p{margin:0;color:#65818a;font-size:9px}.leader{max-width:650px;margin:auto;padding:15px}.leader h3{font-size:13px;margin:0 0 10px}.leader-row{display:flex;align-items:center;gap:12px;padding:12px;border-top:1px solid #15303a}.leader-row>b{color:#607d85;width:25px}.leader-row span{flex:1;font-size:10px}.leader-row strong{color:#36f1a1;font-size:10px}.small{width:27px;height:27px}.analytics-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:16px}.analytics-cards div{background:#091a21;border:1px solid #17333c;border-radius:10px;padding:20px}.analytics-cards b{display:block;font-size:25px;color:#36f1a1}.analytics-cards span{display:block;color:#68848d;font-size:9px;margin-top:5px}.settings-list{padding:10px 20px}.settings-list>div{display:flex;align-items:center;gap:15px;padding:17px 0;border-bottom:1px solid #142d35}.settings-list b{font-size:10px;width:210px}.settings-list span{color:#65808a;font-size:9px;flex:1}.toggle{width:36px;height:20px;border:0;border-radius:20px;background:#24434b;position:relative}.toggle:after{content:'';position:absolute;width:14px;height:14px;border-radius:50%;background:#708890;top:3px;left:3px}.toggle.on{background:#176e5d}.toggle.on:after{left:19px;background:#36f1a1}@media(max-width:1100px){.sidebar{width:72px}.brand div:last-child,nav span,.sidebar-bottom{display:none}.brand{justify-content:center;padding:2px 0 26px}nav a{justify-content:center}main{margin-left:72px;width:calc(100% - 72px)}.dashboard-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.content{padding:16px}.header{padding:0 15px}.search input{width:150px}.live,.profile div:last-child{display:none}.stats,.lower-grid,.analytics-cards{grid-template-columns:1fr}.page-head{align-items:flex-start;gap:12px;flex-direction:column}.scene{height:330px}.trace-card{overflow:auto;justify-content:flex-start;min-width:850px}.route-box{margin:10px;gap:10px;flex-direction:column;align-items:flex-start}}
+`<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Bin & Clean City AI — Smart Waste Command Center</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    ${cssContent}
+    .scene-canvas { width: 100%; height: 100%; display: block; border-radius: 8px; }
+    .chart-container { position: relative; height: 210px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const mockBins = ${JSON.stringify(binsData)};
+    const mockProducts = ${JSON.stringify(productsData)};
+    const mockIncidents = ${JSON.stringify(incidentsData)};
+    const mockStats = [
+      { label: 'Products Tracked', value: '12,840', delta: '+8.2%', note: 'vs last month' },
+      { label: 'Active Smart Bins', value: '1,250', delta: '+4.6%', note: 'online now' },
+      { label: 'Waste Collected', value: '4.82 T', delta: '+12.4%', note: 'today' },
+      { label: 'Cleanliness Score', value: '91.4%', delta: '+3.1%', note: 'city average' }
+    ];
+
+    function City3DScene({ bins }) {
+      const containerRef = useRef();
+
+      useEffect(() => {
+        if (!containerRef.current) return;
+        const width = containerRef.current.clientWidth;
+        const height = containerRef.current.clientHeight;
+
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050e14);
+
+        const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+        camera.position.set(0, 24, 28);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(width, height);
+        renderer.shadowMap.enabled = true;
+
+        containerRef.current.innerHTML = '';
+        containerRef.current.appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+        scene.add(ambientLight);
+
+        const dirLight = new THREE.DirectionalLight(0xffffff, 2.4);
+        dirLight.position.set(10, 25, 10);
+        scene.add(dirLight);
+
+        const grid = new THREE.GridHelper(50, 25, 0x18384a, 0x0d2230);
+        grid.position.y = 0.01;
+        scene.add(grid);
+
+        // Ground
+        const groundGeo = new THREE.PlaneGeometry(50, 50);
+        const groundMat = new THREE.MeshStandardMaterial({ color: 0x061018 });
+        const ground = new THREE.Mesh(groundGeo, groundMat);
+        ground.rotation.x = -Math.PI / 2;
+        scene.add(ground);
+
+        // Buildings
+        for (let i = 0; i < 34; i++) {
+          const w = 2.2 + (i % 3);
+          const d = 2.2 + (i % 2);
+          const h = 2.5 + (i % 6) * 1.4;
+          const x = (i % 9 - 4) * 5 + (i % 2);
+          const z = (Math.floor(i / 9) - 2) * 5;
+
+          const bGeo = new THREE.BoxGeometry(w, h, d);
+          const bMat = new THREE.MeshStandardMaterial({ color: 0x102333, metalness: 0.7, roughness: 0.35 });
+          const bMesh = new THREE.Mesh(bGeo, bMat);
+          bMesh.position.set(x, h / 2, z);
+          scene.add(bMesh);
+        }
+
+        // Smart Bins
+        bins.forEach(bin => {
+          const x = (bin.lon - 77.21) * 500;
+          const z = (bin.lat - 28.614) * -500;
+          const colorHex = bin.status === 'Critical' ? 0xff4d6d : bin.status === 'Warning' ? 0xffb020 : 0x36f1a1;
+
+          const group = new THREE.Group();
+          group.position.set(x, 1, z);
+
+          const cylGeo = new THREE.CylinderGeometry(0.7, 0.85, 1.7, 24);
+          const cylMat = new THREE.MeshStandardMaterial({ color: 0x172b3a, metalness: 0.75, roughness: 0.25 });
+          const cylMesh = new THREE.Mesh(cylGeo, cylMat);
+          group.add(cylMesh);
+
+          const ringGeo = new THREE.TorusGeometry(0.78, 0.06, 12, 32);
+          const ringMat = new THREE.MeshBasicMaterial({ color: colorHex });
+          const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+          ringMesh.position.y = 1.0;
+          group.add(ringMesh);
+
+          scene.add(group);
+        });
+
+        let animationFrameId;
+        const animate = () => {
+          animationFrameId = requestAnimationFrame(animate);
+          controls.update();
+          renderer.render(scene, camera);
+        };
+        animate();
+
+        return () => {
+          cancelAnimationFrame(animationFrameId);
+          renderer.dispose();
+        };
+      }, [bins]);
+
+      return <div className="scene" ref={containerRef} />;
+    }
+
+    function ChartComponent({ type, data }) {
+      const canvasRef = useRef();
+
+      useEffect(() => {
+        if (!canvasRef.current) return;
+        const ctx = canvasRef.current.getContext('2d');
+
+        const chart = new Chart(ctx, {
+          type: type,
+          data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [
+              {
+                label: 'Waste Volume (T)',
+                data: [3.1, 3.8, 4.2, 3.7, 4.6, 5.1, 4.8],
+                borderColor: '#36f1a1',
+                backgroundColor: 'rgba(54, 241, 161, 0.15)',
+                fill: true,
+                tension: 0.4
+              },
+              {
+                label: 'Recycled (T)',
+                data: [1.2, 1.5, 1.9, 1.6, 2.2, 2.6, 2.4],
+                borderColor: '#45b8ff',
+                backgroundColor: 'rgba(69, 184, 255, 0.1)',
+                fill: true,
+                tension: 0.4
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#6d8794' } } },
+            scales: {
+              x: { ticks: { color: '#6d8794' }, grid: { color: '#19303c' } },
+              y: { ticks: { color: '#6d8794' }, grid: { color: '#19303c' } }
+            }
+          }
+        });
+
+        return () => chart.destroy();
+      }, [type, data]);
+
+      return <div className="chart-container"><canvas ref={canvasRef} /></div>;
+    }
+
+    function Sidebar({ currentPath, setPath }) {
+      const items = [
+        ['/', 'Dashboard'],
+        ['/products', 'Products'],
+        ['/traceability', 'Traceability'],
+        ['/smart-bins', 'Smart Bins'],
+        ['/incidents', 'Incidents'],
+        ['/collection', 'Collection'],
+        ['/citizens', 'Citizens'],
+        ['/analytics', 'Analytics'],
+        ['/settings', 'Settings']
+      ];
+
+      return (
+        <aside className="sidebar">
+          <div className="brand">
+            <div className="brand-icon">🍃</div>
+            <div>
+              <strong>Smart Bin & Clean City AI</strong>
+              <span>AI COMMAND CENTER</span>
+            </div>
+          </div>
+          <nav>
+            {items.map(([path, label]) => (
+              <a
+                key={path}
+                href="#"
+                className={currentPath === path ? 'active' : ''}
+                onClick={(e) => { e.preventDefault(); setPath(path); }}
+              >
+                <span>{label}</span>
+              </a>
+            ))}
+          </nav>
+          <div className="sidebar-bottom">
+            <div className="ai-status"><i /> AI systems operational</div>
+            <small>v1.0 • SIH Prototype</small>
+          </div>
+        </aside>
+      );
+    }
+
+    function Header() {
+      return (
+        <header className="header">
+          <div className="search">
+            🔍 <input placeholder="Search products, bins, citizens..." />
+          </div>
+          <div className="header-actions">
+            <div className="live"><i /> LIVE SYSTEM</div>
+            <button className="icon-btn">🔔<em>3</em></button>
+            <div className="profile">
+              <div className="avatar">PK</div>
+              <div><b>Admin</b><span>Municipality</span></div>
+            </div>
+          </div>
+        </header>
+      );
+    }
+
+    function App() {
+      const [path, setPath] = useState('/');
+      const [stats, setStats] = useState(mockStats);
+      const [bins, setBins] = useState(mockBins);
+      const [products, setProducts] = useState(mockProducts);
+      const [incidents, setIncidents] = useState(mockIncidents);
+
+      useEffect(() => {
+        fetch('/api/dashboard')
+          .then(res => res.json())
+          .then(data => {
+            if (data.bins) {
+              setStats([
+                { label: 'Products Tracked', value: String(data.users * 120), delta: '+8.2%', note: 'vs last month' },
+                { label: 'Active Smart Bins', value: String(data.bins), delta: '+4.6%', note: 'online now' },
+                { label: 'Waste Collected', value: (data.wasteKg / 1000).toFixed(2) + ' T', delta: '+12.4%', note: 'today' },
+                { label: 'Cleanliness Score', value: '91.4%', delta: '+3.1%', note: 'city average' }
+              ]);
+            }
+          })
+          .catch(() => {});
+      }, []);
+
+      return (
+        <div className="app">
+          <Sidebar currentPath={path} setPath={setPath} />
+          <main>
+            <Header />
+            <div className="content">
+              {path === '/' && (
+                <>
+                  <div className="page-head">
+                    <div>
+                      <div className="eyebrow"><span /> MUNICIPAL INTELLIGENCE PLATFORM</div>
+                      <h1>Smart Waste <strong>Command Center</strong></h1>
+                      <p>Trace products. Prevent litter. Predict collection. Build cleaner cities.</p>
+                    </div>
+                    <button className="primary">+ Register Product</button>
+                  </div>
+
+                  <div className="stats">
+                    {stats.map((s, i) => (
+                      <div className="stat-card" key={s.label}>
+                        <div className="stat-top"><span>{s.label}</span></div>
+                        <div className="stat-value">{s.value}</div>
+                        <div className="stat-bottom"><b>{s.delta}</b> <span>{s.note}</span></div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="dashboard-grid">
+                    <section className="panel map-panel">
+                      <div className="panel-title">
+                        <div>
+                          <h3>3D City Intelligence Map</h3>
+                          <span>Live smart-bin network • click & drag to explore</span>
+                        </div>
+                        <div className="map-legend">
+                          <span><i className="green" />Normal</span>
+                          <span><i className="orange" />Warning</span>
+                          <span><i className="red" />Critical</span>
+                        </div>
+                      </div>
+                      <City3DScene bins={bins} />
+                      <div className="prediction">
+                        <div className="pulse">AI</div>
+                        <div>
+                          <b>Overflow prediction</b>
+                          <span>BIN-102 may reach 100% in <strong>38 min</strong>.</span>
+                        </div>
+                        <button>Dispatch Vehicle</button>
+                      </div>
+                    </section>
+
+                    <div className="side-stack">
+                      <div className="panel">
+                        <div className="panel-title">
+                          <div>
+                            <h3>AI Bin Monitoring</h3>
+                            <span>Live sensor telemetry</span>
+                          </div>
+                        </div>
+                        <div className="bin-list">
+                          {bins.slice(0, 4).map(b => (
+                            <div className="bin-row" key={b.id}>
+                              <div className={'bin-dot ' + b.status.toLowerCase()} />
+                              <div className="bin-info">
+                                <b>{b.id}</b>
+                                <span>📍 {b.area}</span>
+                              </div>
+                              <div className="fill">
+                                <div className="fill-track"><i style={{ width: b.fill + '%' }} /></div>
+                                <b>{b.fill}%</b>
+                              </div>
+                              <span className={'status ' + b.status.toLowerCase()}>{b.status}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="panel">
+                        <div className="panel-title">
+                          <div>
+                            <h3>Priority Alerts</h3>
+                            <span>AI-detected incidents</span>
+                          </div>
+                        </div>
+                        {incidents.map(x => (
+                          <div className="alert-row" key={x.id}>
+                            <div className={'alert-icon ' + x.severity.toLowerCase()}>⚠️</div>
+                            <div className="alert-text">
+                              <b>{x.product}</b>
+                              <span>{x.location} • {x.confidence}% confidence</span>
+                            </div>
+                            <div className="alert-time">⏱ {x.time}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lower-grid">
+                    <section className="panel chart-panel">
+                      <div className="panel-title">
+                        <div>
+                          <h3>Waste Recovery Trend</h3>
+                          <span>Weekly volume • tonnes</span>
+                        </div>
+                      </div>
+                      <ChartComponent type="line" />
+                    </section>
+
+                    <section className="panel chart-panel">
+                      <div className="panel-title">
+                        <div>
+                          <h3>Collection Efficiency</h3>
+                          <span>Last 7 days</span>
+                        </div>
+                      </div>
+                      <ChartComponent type="bar" />
+                    </section>
+                  </div>
+                </>
+              )}
+
+              {path === '/products' && (
+                <div className="panel table-panel">
+                  <div style={{ padding: 20 }}>
+                    <h1>Product Registry</h1>
+                    <p>Register and monitor every product through its lifecycle.</p>
+                  </div>
+                  <div className="table-wrap">
+                    <table>
+                      <thead>
+                        <tr><th>Product ID</th><th>Product</th><th>Category</th><th>Owner</th><th>Status</th><th>Eco Points</th></tr>
+                      </thead>
+                      <tbody>
+                        {products.map(p => (
+                          <tr key={p.id}>
+                            <td>{p.id}</td><td>{p.name}</td><td>{p.category}</td><td>{p.owner}</td>
+                            <td><span className={'status ' + p.status.toLowerCase().replaceAll(' ', '-')}>{p.status}</span></td>
+                            <td>{p.points}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {path === '/smart-bins' && (
+                <div className="panel table-panel">
+                  <div style={{ padding: 20 }}>
+                    <h1>Smart Bin Network</h1>
+                    <p>Monitor fill levels, sensors, health and predicted overflow.</p>
+                  </div>
+                  <div className="table-wrap">
+                    <table>
+                      <thead>
+                        <tr><th>Bin ID</th><th>Area</th><th>Waste Type</th><th>Fill Level</th><th>Status</th><th>Coordinates</th></tr>
+                      </thead>
+                      <tbody>
+                        {bins.map(b => (
+                          <tr key={b.id}>
+                            <td>{b.id}</td><td>{b.area}</td><td>{b.type}</td><td>{b.fill}%</td>
+                            <td><span className={'status ' + b.status.toLowerCase()}>{b.status}</span></td>
+                            <td>{b.lat}, {b.lon}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {path === '/incidents' && (
+                <div className="panel table-panel">
+                  <div style={{ padding: 20 }}>
+                    <h1>Waste Incidents</h1>
+                    <p>AI-assisted detection and accountability workflow.</p>
+                  </div>
+                  <div className="table-wrap">
+                    <table>
+                      <thead>
+                        <tr><th>Incident</th><th>Product</th><th>Location</th><th>Severity</th><th>Confidence</th><th>Detected</th></tr>
+                      </thead>
+                      <tbody>
+                        {incidents.map(x => (
+                          <tr key={x.id}>
+                            <td>{x.id}</td><td>{x.product}</td><td>{x.location}</td>
+                            <td><span className={'status ' + x.severity.toLowerCase()}>{x.severity}</span></td>
+                            <td>{x.confidence}%</td><td>{x.time}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {['/traceability', '/collection', '/citizens', '/analytics', '/settings'].includes(path) && (
+                <div className="panel" style={{ padding: 30, textAlign: 'center' }}>
+                  <h2>{path.substring(1).toUpperCase()} Module Operational</h2>
+                  <p>All AI telemetry sensors active and synchronized with municipal backend API.</p>
+                </div>
+              )}
+            </div>
+          </main>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>`
