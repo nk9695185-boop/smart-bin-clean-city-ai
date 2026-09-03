@@ -52,3 +52,5 @@ npm run dev
 
 ## 👤 Author
 Developed by **Nitin Maurya** ([@nk9695185-boop](https://github.com/nk9695185-boop)).
+### project link https://nk9695185-boop.github.io/smart-bin-clean-city-ai/
+
