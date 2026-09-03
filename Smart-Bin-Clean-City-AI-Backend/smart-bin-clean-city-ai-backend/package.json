@@ -1,0 +1,1 @@
+{"name":"smart-bin-clean-city-ai","private":true,"scripts":{"install-all":"npm --prefix backend install","dev":"npm --prefix backend run dev","start":"npm --prefix backend start"},"workspaces":["backend"]}

@@ -1,0 +1,2 @@
+import React from 'react';import {Bell,Search,ShieldCheck} from 'lucide-react';
+export default function Header(){return <header className="header"><div className="search"><Search size={17}/><input placeholder="Search products, bins, citizens..."/></div><div className="header-actions"><div className="live"><i/> LIVE SYSTEM</div><button className="icon-btn"><Bell size={19}/><em>3</em></button><div className="profile"><div className="avatar">PK</div><div><b>Admin</b><span>Municipality</span></div></div></div></header>}

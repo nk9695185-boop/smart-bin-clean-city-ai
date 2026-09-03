@@ -1,0 +1,1 @@
+import {Router} from 'express';import {incidents,createIncident,updateIncident} from '../controllers/incidentController.js';import {auth} from '../middleware/auth.js';const r=Router();r.get('/',auth,incidents);r.post('/',auth,createIncident);r.patch('/:id',auth,updateIncident);export default r;

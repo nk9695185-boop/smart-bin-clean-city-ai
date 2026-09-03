@@ -1,0 +1,1 @@
+import {Router} from 'express';import {products,createProduct,trace,addEvent} from '../controllers/productController.js';import {auth} from '../middleware/auth.js';const r=Router();r.get('/',auth,products);r.post('/',auth,createProduct);r.get('/:productId/trace',auth,trace);r.post('/:productId/events',auth,addEvent);export default r;

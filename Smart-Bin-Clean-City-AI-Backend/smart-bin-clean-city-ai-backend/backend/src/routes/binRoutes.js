@@ -1,0 +1,1 @@
+import {Router} from 'express';import {listBins,getBin,sensorData,critical} from '../controllers/binController.js';import {auth,roles} from '../middleware/auth.js';const r=Router();r.get('/',auth,listBins);r.get('/critical',auth,critical);r.get('/:id',auth,getBin);r.post('/:id/sensor-data',auth,roles('admin','municipality'),sensorData);export default r;
