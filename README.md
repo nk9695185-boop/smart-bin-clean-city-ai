@@ -1,6 +1,11 @@
 ﻿# ♻️ Smart Bin & Clean City AI Platform
 
-An AI-powered smart waste management and city cleanliness platform featuring real-time smart bin monitoring, incident tracking, AI-driven waste analytics, and interactive dashboards.
+An AI-powered smart waste management and city cleanliness platform featuring real-time smart bin monitoring, incident tracking, AI-driven waste analytics, and interactive 3D dashboards.
+
+## 🌐 Live Web Demo (Runs on Any Device)
+👉 **[https://nk9695185-boop.github.io/smart-bin-clean-city-ai/](https://nk9695185-boop.github.io/smart-bin-clean-city-ai/)**
+
+---
 
 ## 🚀 Features
 
@@ -13,6 +18,7 @@ An AI-powered smart waste management and city cleanliness platform featuring rea
 
 ```
 MiniProject/
+├── index.html                           # Standalone live web app (GitHub Pages ready)
 ├── Smart-Bin-Clean-City-AI-Frontend/   # React / Vite Frontend application
 ├── Smart-Bin-Clean-City-AI-Backend/    # Node.js / Express & AI Service Backend
 ├── run.bat                              # One-click Windows startup script
